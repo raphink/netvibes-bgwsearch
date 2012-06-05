@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:widget="http://www.netvibes.com/ns/" >
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="http://www.netvibes.com/themes/uwa/style.css" />
+<script type="text/javascript" src="http://www.netvibes.com/js/UWA/load.js.php?env=Standalone"></script>
+
+
+<link rel="icon" type="image/x-icon"
+  href="http://www.biblegateway.com/favicon.ico" />
+
+
+<meta name="author" content="Raphaël Pinson" />
+<meta name="version" content="0.4" />
+<meta name="website" content="http://www.biblegateway.com" />
+<meta name="description" content="BibleGateway.com QuickSearch" />
+<meta name="keywords" content="search god Jesus bible gateway verse day daily scripture" />
+<meta name="thumbnail" content="http://r.pinson.free.fr/netvibes/bgwsearch/bgwsearch.png" />
+<meta name="apiVersion" content="1.0" />
+
+<meta name="inline" content="true" />
+
+
+<title>BibleGateway QuickSearch</title>
+
+<widget:preferences>
+  <preference name="SearchURL" type="text" label="URL" 
+    defaultValue="http://www.biblegateway.com/quicksearch/" class="truc" />
+
+
+  <preference name="qs_version" type="list" label="Version" defaultValue="9" onchange="refresh">
+
+     <option value="94" label="Amuzgo de Guerrero (AMU)" />
+     <option value="94" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amuzgo de Guerrero" />
+     <option value="28" label="العربية (AR)" />
+     <option value="28" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arabic Life Application Bible" />
+     <option value="21" label="Български (BG)" />
+     <option value="21" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bulgarian Bible" />
+     <option value="82" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1940 Bulgarian Bible" />
+
+     <option value="90" label="Chinanteco de Comaltepec (CCO)" />
+     <option value="90" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chinanteco de Comaltepec" />
+     <option value="23" label="Kreyol (CPF)" />
+     <option value="23" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Haitian Creole Version" />
+     <option value="29" label="Čeština (CS)" />
+     <option value="29" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Slovo na cestu" />
+     <option value="11" label="Dansk (DA)" />
+     <option value="11" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dette er Biblen pÃ¥ dansk" />
+     <option value="54" label="Deutsch (DE)" />
+
+     <option value="54" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elberfelder" />
+     <option value="33" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoffnung für Alle" />
+     <option value="10" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luther Bibel 1545" />
+     <option value="31" label="English (EN)" class="language" />
+     <option value="31" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New International Version" />
+     <option value="49" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New American Standard Bible" />
+     <option value="65" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Message" />
+     <option value="45" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amplified Bible" />
+     <option value="51" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Living Translation" />
+
+     <option value="9" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;King James Version" />
+     <option value="47" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;English Standard Version" />
+     <option value="46" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contemporary English Version" />
+     <option value="50" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New King James Version" />
+     <option value="78" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Century Version" />
+     <option value="48" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21st Century King James Version" />
+     <option value="8" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;American Standard Version" />
+     <option value="15" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Young's Literal Translation" />
+     <option value="16" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Darby Translation" />
+
+     <option value="74" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Life Version" />
+     <option value="77" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Holman Christian Standard Bible" />
+     <option value="76" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New International Reader's Version" />
+     <option value="53" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wycliffe New Testament" />
+     <option value="73" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Worldwide English (New Testament)" />
+     <option value="64" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New International Version - UK" />
+     <option value="72" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today's New International Version" />
+     <option value="60" label="Español (ES)" />
+     <option value="60" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reina-Valera 1960" />
+
+     <option value="42" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nueva Versión Internacional" />
+     <option value="61" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reina-Valera 1995" />
+     <option value="41" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Castilian" />
+     <option value="6" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reina-Valera Antigua" />
+     <option value="57" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Biblia en Lenguaje Sencillo" />
+     <option value="59" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La Biblia de las Américas" />
+     <option value="2" label="Français (FR)" />
+     <option value="2" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Louis Segond" />
+     <option value="32" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La Bible du Semeur" />
+
+     <option value="68" label="Κοινη (GRC)" />
+     <option value="68" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1881 Westcott-Hort New Testament" />
+     <option value="69" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1550 Stephanus New Testament" />
+     <option value="70" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1894 Scrivener New Testament" />
+     <option value="81" label="תירביע (HE)" />
+     <option value="81" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Westminster Leningrad Codex" />
+     <option value="71" label="Ilonggo (HIL)" />
+     <option value="71" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hiligaynon Bible" />
+     <option value="62" label="Hrvatski (HR)" />
+
+     <option value="62" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Croatian Bible" />
+     <option value="17" label="Magyar (HU)" />
+     <option value="17" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hungarian KÃ¡roli" />
+     <option value="18" label="Íslenska (IS)" />
+     <option value="18" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Icelandic Bible" />
+     <option value="55" label="Italiano (IT)" />
+     <option value="55" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La Nuova Diodati" />
+     <option value="34" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La Parola è Vita" />
+     <option value="20" label="한국어 (KO)" />
+
+     <option value="20" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Korean Bible" />
+     <option value="24" label="Māori (MI)" />
+     <option value="24" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maori Bible" />
+     <option value="56" label="Plautdietsch (NDS)" />
+     <option value="56" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reimer 2001" />
+     <option value="109" label="Náhuatl de Guerrero (NGU)" />
+     <option value="109" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Náhuatl de Guerrero" />
+     <option value="30" label="Nederlands (NL)" />
+     <option value="30" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Het Boek" />
+
+     <option value="5" label="Norsk (NO)" />
+     <option value="5" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Det Norsk Bibelselskap 1930" />
+     <option value="35" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Levande Bibeln" />
+     <option value="37" label="Português (PT)" />
+     <option value="37" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O Livro" />
+     <option value="25" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;João Ferreira de Almeida Atualizada" />
+     <option value="14" label="Română (RO)" />
+     <option value="14" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Romanian" />
+     <option value="38" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Romanian" />
+
+     <option value="13" label="Русский (RU)" />
+     <option value="13" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Russian Synodal Version" />
+     <option value="39" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Slovo Zhizny" />
+     <option value="40" label="Slovenčina (SK)" />
+     <option value="40" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nádej pre kazdého" />
+     <option value="1" label="Shqip (SQ)" />
+     <option value="1" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Albanian Bible" />
+     <option value="44" label="Svenska (SV)" />
+     <option value="44" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Levande Bibeln" />
+
+     <option value="7" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Svenska 1917" />
+     <option value="75" label="Kiswahili (SW)" />
+     <option value="75" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swahili New Testament" />
+     <option value="43" label="Tagalog (TL)" />
+     <option value="43" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ang Salita ng Diyos" />
+     <option value="19" label="Tiêng Viêt (VI)" />
+     <option value="19" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1934 Vietnamese Bible" />
+     <option value="80" label="汉语 (ZH)" />
+     <option value="80" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chinese Union Version (Simplified)" />
+
+     <option value="22" label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chinese Union Version (Traditional)" />
+
+  </preference>
+
+
+  <preference name="showvotd" type="boolean" label="Show Verse of the Day" 
+    defaultValue="true" onchange="refresh" />
+
+</widget:preferences>
+
+
+<script type="text/javascript">
+
+
+   var BGWidget = {}
+
+   //BGWidget.l10n = {}
+
+   BGWidget.getl10n = function (name, lang) {
+
+      var l10nURL = 'http://r.pinson.free.fr/netvibes/l10n.php?widget='+name+'&lang='+lang;
+
+      UWA.Data.request(
+        l10nURL,
+        {
+           method: 'get',
+           proxy: 'ajax',
+           type: 'json',
+           cache: 1,
+           onComplete: BGWidget.processl10n
+        }
+      );
+   }
+ 
+   BGWidget.processl10n = function(loc) {
+      BGWidget.l10n = loc;
+      widget.setTitle(BGWidget.l10n.widgetTitle);
+      //return loc;
+      BGWidget.getVotD(widget.getValue('qs_version'));
+   }
+
+   BGWidget.getVotD = function (qs_version) {
+
+     var VotDURL = 'http://www.biblegateway.com/usage/votd/rss/votd.rdf?version='+qs_version;
+
+     UWA.Data.getFeed(
+       VotDURL,
+       BGWidget.printBody
+     );
+   }
+
+
+   BGWidget.printBody = function (VotD) {
+
+      var widgetBody = widget.createElement("p");
+
+      var searchForm = widget.createElement("form", {id:"searchForm", action:widget.getValue("SearchURL"), method:"get", target:"_blank"});
+
+      var headerText = BGWidget.l10n.widgetHeader;
+      var bodyHeader = widget.createElement("span");
+      bodyHeader.innerHTML = headerText;
+      var qs_version = widget.createElement("input", {type:"hidden", name:"qs_version", value:widget.getValue("qs_version"), id:"qs_version" });
+      var br         = widget.createElement("br");
+      var qsearch    = widget.createElement("input", {type:"text", name:"quicksearch", id:"qsearch"});
+      var submit     = widget.createElement("input", {type:"submit", value:_('Search'), id:"submit"});
+
+      searchForm.appendChild(bodyHeader);
+      searchForm.appendChild(qs_version);
+      searchForm.appendChild(br);
+      searchForm.appendChild(qsearch);
+      searchForm.appendChild(submit);
+
+
+      // Analyze VotD
+
+
+      var VotDDiv  = widget.createElement("div", {id: "votd"});
+
+      if ( ! VotD.title ) {
+
+         VotDDiv.innerHTML = BGWidget.l10n.VotDSorry;
+
+      } else {
+         VotDDiv.innerHTML = BGWidget.l10n.VotD;
+
+         var VotDToggle = widget.createElement("a", {id: "votdtoggle", title: BGWidget.l10n.VotDToggle});
+         VotDToggle.innerHTML = VotD.items[0].title;
+         VotDToggle.onclick = function () {
+             VotDBox.toggle();
+         }
+
+         VotDDiv.appendChild(VotDToggle);
+
+         var VotDBox = widget.createElement("div", {id: "votdbox"});
+         VotDBox.hide();
+         VotDContent = widget.createElement("div", {id: "votdcontent"});
+         VotDContent.innerHTML = VotD.items[0].content;
+         VotDBox.appendChild(VotDContent);
+
+         VotDLink = widget.createElement("a", {id: "votdlink", href: VotD.items[0].link});
+         VotDLink.innerHTML = BGWidget.l10n.VotDDisplay;
+         VotDBox.appendChild(VotDLink);
+
+         VotDDiv.appendChild(VotDBox);
+
+      }
+
+      var VotDHR   = widget.createElement("hr", {id: "votdhr"});
+
+      // Print everything
+
+      widgetBody.appendChild(searchForm);
+       
+
+      if ( widget.getBool('showvotd') == true ) {
+         widgetBody.appendChild(VotDHR);
+         widgetBody.appendChild(VotDDiv);
+      }
+
+      widget.setBody(widgetBody);
+   }
+
+
+   widget.onLoad = function () {
+      widget.setBody('<p>' + _('Loading...') + '</p>');
+      BGWidget.getl10n('bgwsearch', widget.lang);
+      //BGWidget.getVotD(widget.getValue('qs_version'));
+   }
+
+
+   widget.onRefresh = function () {
+//      BGWidget.getl10n('bgwsearch', widget.lang);
+      BGWidget.getVotD(widget.getValue('qs_version'));
+   }
+
+
+</script>
+
+<style type="text/css">
+
+   hr#votdhr {
+      margin: 5px;
+   }
+
+   div#votd {
+      margin: 3px;
+   }
+
+   div#votdcontent {
+      margin: 5px;
+      padding: 5px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: grey;
+   }
+
+   a#votdtoggle {
+      text-decoration: underline;
+   }
+
+   a#votdlink {
+    
+   }
+
+   input#qsearch {
+      margin: 3px;
+   }
+
+   input#submit {
+      margin: 3px;
+   }
+
+   option.language {
+      color: red;
+      background-color: blue;
+   }
+
+   preference.truc {
+       background-color: blue;
+   }
+
+</style>
+
+
+</head>
+
+
+<body>
+<p>Loading...</p>
+</body>
+
+</html>
+
+

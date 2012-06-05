@@ -1,0 +1,10 @@
+{
+        "lang": "fr_FR",
+	"widgetTitle": "Recherche rapide BibleGateway",
+	"defaultVersion": "2",
+	"widgetHeader": "Entrez le passage biblique (ex. John 3:16), le mot clé (ex. Jésus, prophète, etc.) ou le sujet (ex. salut) que vous souhaitez rechercher.",
+	"VotD": "Verset du jour : ",
+	"VotDDisplay": "Afficher ce verset sur BibleGateway.com",
+	"VotDToggle": "Cliquez pour montrer/cacher le verset du jour",
+	"VotDSorry": "Désolé, nous n'avons pas trouvé de verset du jour dans cette version de la Bible. Éditez vos préférences pour changer votre version ou désactiver le verset du jour."
+}

@@ -1,0 +1,10 @@
+{
+        "lang": "en_US",
+	"widgetTitle": "BibleGateway QuickSearch",
+	"defaultVersion": "9",
+	"widgetHeader": "Enter the Bible passage (e.g. John 3:16), keyword (e.g. Jesus, prophet, etc.) or topic (e.g. salvation) you want to find.",
+	"VotD": "Verse of the Day: ",
+	"VotDDisplay": "Display this verse on BibleGateway.com",
+	"VotDToggle": "Click to toggle Verse of the Day",
+	"VotDSorry": "Sorry, we could not find a Verse of the Day for this Bible version. Edit your preferences to change the Bible version you are using or disable the Verse of the Day feature."
+}

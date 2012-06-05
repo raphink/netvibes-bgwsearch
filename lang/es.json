@@ -1,0 +1,10 @@
+{
+        "lang": "es",
+	"widgetTitle": "Busqueda BibleGateway.com",
+	"defaultVersion": "60",
+	"widgetHeader": "Insierta el pasage biblico (eje. Jesus, profeta, etc.) o el sujeto (eje. salvacion) que quiera encontrar.",
+	"VotD": "Versiculo del dia : ",
+	"VotDDisplay": "Mostrar versiculo en BibleGateway.com",
+	"VotDToggle": "Haga clic aqui para mostrar/esconder versiculo del dia",
+	"VotDSorry": "Lo sentimos, no pudimos encontrar el versiculo del dia en esta version de la Biblia. Edite su preferencia para cambiar la version o desactivar el versiculo del dia."
+}
